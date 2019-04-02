@@ -1,0 +1,65 @@
+<div class="container">
+  <span>
+    <button
+      class="btn btn-info btn-info-tour"
+      type="button"
+      (click)="iniciarTour()"
+    >
+      <i class="fa fa-info"></i>
+    </button>
+  </span>
+  <button class="btn btn-primary 1-passo" (click)="criaPdf()">Gerar pdf</button>
+  <button class="btn btn-primary 2-passo" (click)="msg()">teste</button>
+  <input
+    type="file"
+    (change)="enviarArquivo($event)"
+    method="post"
+    enctype="multipart/form-data"
+  />
+
+  <br />
+
+  <h1>apenas testando o angular material</h1>
+
+  <button mat-raised-button color="primary">
+    Login with Google
+  </button>
+
+  <section class="example-section">
+    <label class="example-margin">Align:</label>
+    <mat-radio-group>
+      <mat-radio-button class="example-margin" value="after"
+        >After</mat-radio-button
+      >
+      <mat-radio-button class="example-margin" value="before"
+        >Before</mat-radio-button
+      >
+    </mat-radio-group>
+  </section>
+
+  <div class="col-sm-6">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Shiba Inu</mat-card-title>
+        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+      </mat-card-header>
+      <img
+        mat-card-image
+        src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+        alt="Photo of a Shiba Inu"
+      />
+      <mat-card-content>
+        <p>
+          The Shiba Inu is the smallest of the six original and distinct spitz
+          breeds of dog from Japan. A small, agile dog that copes very well with
+          mountainous terrain, the Shiba Inu was originally bred for hunting.
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
